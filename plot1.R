@@ -12,7 +12,6 @@ plot1 <- function (){
         dev.copy(png, file="plot1.png")
         hist(as.numeric(as.character(d$Global_active_power)), main ="Global Active Power", xlab ="Global Active Power (kilowatts)", col = "red")
         dev.off()
-        #close
         close(filtered) 
         close(zz)
 }
